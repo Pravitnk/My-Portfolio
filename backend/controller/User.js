@@ -23,7 +23,7 @@ export const login = async (req, res) => {
         expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000), // Expires in 15 days
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
-        sameSite: "Lax",
+        sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax",
       })
       .json({
         success: true,
