@@ -25,8 +25,8 @@ app.use(cookieParser());
 import { userRouter } from "./routes/User.js";
 app.use("/api/v1", userRouter);
 
-// Serve the React app for any other route
-app.use(express.static(path.join(__dirname, 'build'))); // Serve static files from the React app
+const __dirname = path.dirname(new URL(import.meta.url).pathname); // Get __dirname equivalent
+app.use(express.static(path.join(__dirname, 'build'))); // Serve static files
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
