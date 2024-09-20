@@ -1,6 +1,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import path from "path"; // Import path to handle file paths
 
 export const app = express();
 
@@ -23,3 +24,10 @@ app.use(cookieParser());
 
 import { userRouter } from "./routes/User.js";
 app.use("/api/v1", userRouter);
+
+// Serve the React app for any other route
+app.use(express.static(path.join(__dirname, 'build'))); // Serve static files from the React app
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
