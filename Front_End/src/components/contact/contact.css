@@ -1,0 +1,97 @@
+.contact{
+    background-color: hsl(219, 48%, 8%);
+    width: 100%;
+    height: 100vh;
+}
+
+.contactRightBar{
+    background-image: linear-gradient(to bottom, hsl(250, 100%, 75%), white);
+    width: 30%;
+    height: inherit;
+    animation: contactRightBarAnimation 1s linear forwards;
+    position: absolute;
+    right: 0;
+}
+
+.contactContainer{
+    display: flex;
+    height: 88%;
+    width: 70%;
+    background-color: white;
+    position: absolute;
+    border-radius: 100px 0 0 100px;
+    justify-content: center;
+    top: 50%;
+    transform: translateX(20%) translateY(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    animation: contactContainerAnimation 1.5s linear forwards;
+}
+
+.contactContainerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.contactContainerForm h4{
+    text-align: center;
+    margin: 1vmax;
+}
+
+.contactContainerForm input,
+.contactContainerForm textarea{
+    padding: 1vmax;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    transform: translateX(-100vw);
+    animation: contactFormInput 1.8s ease-in-out forwards 0.8s;
+    border-radius: 15px;
+}
+
+.contactContainerForm Button {
+    background-color: hsl(250, 100%, 75%);
+    transform: translateY(-100vh);
+    animation: contactFormBtn 2s ease-in-out forwards 1s;
+    border-radius: 15px;
+}
+
+.contactContainerForm Button:hover {
+    background-color: hsl(219, 48%, 8%);
+    box-shadow: 0 0 10px rgba(51, 48, 48, 0.712);
+}
+
+
+@keyframes contactRightBarAnimation {
+    from {
+        transform: translateY(-100%);
+}
+to {
+    transform: translateY(0%);
+}
+}
+
+@keyframes contactContainerAnimation {
+    from {
+            transform: translateX(-100%) translateY(-50%);
+    }
+    to {
+        transform: translateX(20%) translateY(-50%);
+}
+    
+}
+
+@keyframes contactFormInput {
+to {
+    transform: translateX(0%);
+}
+}
+
+@keyframes contactFormBtn {
+   
+to {
+    transform: translateY(0%);
+}
+}

@@ -1,0 +1,88 @@
+.footer {
+  background-color: rgb(26, 26, 26);
+  padding: 3vmax;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.footer div h5 {
+  color: white;
+  border-bottom: 1px solid white;
+  width: 120px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.footer div p {
+  color: white;
+  width: 60%;
+}
+
+.footer div h6 {
+  color: white;
+  padding: 10px 0;
+}
+
+.footer div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer div a {
+  color: white;
+  font-size: 3vmax;
+  transition: all 0.3s;
+}
+
+.footer div a:nth-child(2):hover {
+  color: rgb(64, 88, 226);
+}
+
+.footer div a:nth-child(3):hover {
+  color: rgb(64, 88, 226);
+}
+
+.footer div a:nth-child(4):hover {
+  color: rgb(119, 61, 212);
+}
+
+.footer div span {
+  color: rgb(144, 100, 247);
+  font-weight: bolder;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1vmax;
+}
+
+.footerContactBtn {
+  background-color: hsl(250, 100%, 75%);
+  /* box-shadow: 8px 8px 15px 0px; */
+  color: rgb(44, 31, 31);
+  padding: 5px 0px;
+  width: 140px;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  margin: 2vmax 0;
+  width: 11vw;
+  /* border: 1px solid white; */
+  transition: all 1s;
+  border-radius: 15px;
+}
+
+.footerContactBtn p {
+  color: black;
+}
+
+.footerContactBtn:hover {
+  background-color: hsl(250, 95%, 62%);
+  padding: 0.5vmax 0;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(235, 229, 229, 0.712);
+}
+
+.footerInfo {
+  color: hsl(250, 95%, 62%);
+  font: 100 1.1vmax "Josefin Sans", sans-serif;
+}

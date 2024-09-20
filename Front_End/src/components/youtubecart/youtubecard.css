@@ -1,0 +1,32 @@
+.YouTubeCard {
+  display: flex;
+  transition: all 0.5s;
+  padding: 1vmax;
+  margin: 2vmax;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 270px;
+  height: auto;
+  background-color: rgb(217, 220, 223);
+}
+
+.YouTubeCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.329);
+}
+
+.YouTubeCard a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.712);
+  width: inherit;
+}
+
+.YouTubeCard img {
+  width: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .YouTubeCard {
+    width: 180px;
+  }
+}
