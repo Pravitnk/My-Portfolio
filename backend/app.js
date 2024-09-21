@@ -26,7 +26,7 @@ import { userRouter } from "./routes/User.js";
 app.use("/api/v1", userRouter);
 
 const _dirname = path.resolve();
-app.use(express.static(path.join(_dirname, "/Front_End/dist")));
+app.use(express.static(path.join(_dirname, "Front_end", "dist")));
 app.get("*", (_, res) => {
-  res.sendFile(path.resolve(_dirname, "Front_End", "dist", "index.html"));
+  res.sendFile(path.join(_dirname, "Front_end", "dist", "index.html"));
 });
