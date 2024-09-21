@@ -25,9 +25,8 @@ app.use(cookieParser());
 import { userRouter } from "./routes/User.js";
 app.use("/api/v1", userRouter);
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname); // Get __dirname equivalent
-app.use(express.static(path.join(__dirname, 'build'))); // Serve static files
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+const _dirname = path.resolve();
+app.use(express.static(path.join(_dirname, "/Front_end/dist")));
+app.get("*", (_, res) => {
+  res.sendFile(path.resolve(_dirname, "Front_end", "dist", "index.html"));
 });
