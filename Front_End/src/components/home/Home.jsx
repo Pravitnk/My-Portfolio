@@ -3,7 +3,7 @@ import "./home.css";
 import * as THREE from "three";
 // import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import moon from "../../images/moon.jpg";
-import venus from "../../images/Venus.jpg";
+import venus from "../../images/venus.jpg";
 import spaceImg from "../../images/Space.jpg";
 import Typography from "@mui/material/Typography";
 import TimeLine from "../timeline/Timeline";
