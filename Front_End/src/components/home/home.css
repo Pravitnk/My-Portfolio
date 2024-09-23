@@ -45,10 +45,10 @@
 }
 
 .homeCanvasBox h2 {
-  font: 900 4rem "Ubuntu Mono", "Roboto";
+  font: 900 3rem "Ubuntu Mono", "Roboto";
   letter-spacing: 22px;
-  line-height: 130px;
-  color: white;
+  line-height: 120px;
+  color: hsl(250, 100%, 72%);
 }
 
 .homeCanvasContainer a {
