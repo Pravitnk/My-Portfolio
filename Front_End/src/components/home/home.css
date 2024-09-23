@@ -48,7 +48,7 @@
   font: 900 4rem "Ubuntu Mono", "Roboto";
   letter-spacing: 22px;
   line-height: 130px;
-  color: hsl(250, 100%, 75%);
+  color: white;
 }
 
 .homeCanvasContainer a {
