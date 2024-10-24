@@ -153,7 +153,7 @@ function Home({ timelines = [], youtubes = [], skills = {} }) {
         <Link to="/projects">VIEW WORK</Link>
         <Link
           className="homeCanvasResume"
-          to="https://drive.google.com/file/d/1XEvlRqQLeJd1W4IfPXXV7QJppjUVpnoN/view?usp=drive_link"
+          to="https://drive.google.com/file/d/1uQT97Y69RqC2fXeeg4ayTjSjt-CrdCwU/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
         >
